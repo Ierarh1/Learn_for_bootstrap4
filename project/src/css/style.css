@@ -8,6 +8,7 @@ header{
 }
 
 nav{
+
     height: 50px;
     background-color: #212121;
 }
@@ -148,4 +149,74 @@ nav{
 
 
 
+}
+
+.causes .benefits
+{   
+    width: 112px;
+    height: 24px;
+    background: #000000;
+    text-align: center;
+    
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 25px;
+
+
+
+    
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.causes .nine_causes{
+    color: #222222;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 33px;
+}
+
+
+
+.causes .wrapper{
+    position: relative;
+    min-height: 190px;
+    margin-top: 15px;
+}
+
+.causes .round{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius:100%;
+    top: 15px;
+
+}
+
+
+
+.causes .descr{
+    position: absolute;
+    right: 100px;
+    top: 0px;
+
+    width: 371px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.causes .descr span{
+    color: #1EACC7;
 }
