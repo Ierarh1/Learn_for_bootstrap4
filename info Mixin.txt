@@ -1,0 +1,25 @@
+Mixin втыкаешь в начало. ПЕРВЫМ по списку должен идти начертание шрифтов это та ебень со *. А уже потом ты можешь втыкать миксины,
+работает всё довольно просто создаём миксин
+@mixin black_quarter
+    width: 112px
+    height: 24px
+    background: #000000
+    text-align: center
+    margin: 0 auto
+    margin-top: 20px
+    line-height: 25px
+    font-weight: 400
+    font-size: 11px
+    text-transform: uppercase
+    color: #FFFFFF
+
+
+А затем там где его нам надо подключить можно воспользоваться фразочкой @include. ПОлучается примерно так
+
+
+.causes
+  .label
+    @include black_quarter
+    
+
+ооочень удобная хрень

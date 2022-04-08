@@ -147,7 +147,7 @@ nav {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
 
-.causes .benefits {
+.causes .label {
   width: 112px;
   height: 24px;
   background: #000000;
@@ -161,7 +161,7 @@ nav {
   color: #FFFFFF;
 }
 
-.causes .nine_causes {
+.causes .title {
   color: #222222;
   font-family: 'Roboto';
   font-style: normal;
@@ -209,5 +209,30 @@ nav {
 
 .causes .descr span {
   color: #1EACC7;
+}
+
+.mobile .label {
+  width: 112px;
+  height: 24px;
+  background: #000000;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  line-height: 25px;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.mobile .title {
+  color: #222222;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 33px;
 }
 /*# sourceMappingURL=style.css.map */

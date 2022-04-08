@@ -1,6 +1,32 @@
 *
   font-family: 'Roboto' sans-serif
 
+
+@mixin black_quarter
+    width: 112px
+    height: 24px
+    background: #000000
+    text-align: center
+    margin: 0 auto
+    margin-top: 20px
+    line-height: 25px
+    font-weight: 400
+    font-size: 11px
+    text-transform: uppercase
+    color: #FFFFFF
+
+
+@mixin headerH
+    color: #222222
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 700
+    font-size: 38px
+    text-transform: uppercase
+    text-align: center
+    margin-top: 33px
+
+
 header
   position: relative
 
@@ -123,28 +149,11 @@ nav
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 
 .causes
-  .benefits
-    width: 112px
-    height: 24px
-    background: #000000
-    text-align: center
-    margin: 0 auto
-    margin-top: 20px
-    line-height: 25px
-    font-weight: 400
-    font-size: 11px
-    text-transform: uppercase
-    color: #FFFFFF
-
-  .nine_causes
-    color: #222222
-    font-family: 'Roboto'
-    font-style: normal
-    font-weight: 700
-    font-size: 38px
-    text-transform: uppercase
-    text-align: center
-    margin-top: 33px
+  .label
+    @include black_quarter
+    
+  .title
+    @include headerH
 
   .wrapper
     position: relative
@@ -176,3 +185,10 @@ nav
       color: #1EACC7
 
 
+.mobile
+  .label
+    @include black_quarter
+  .title
+    @include headerH
+
+    
