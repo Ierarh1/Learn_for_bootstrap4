@@ -2,6 +2,9 @@
   font-family: 'Roboto' sans-serif
 
 
+$main-color: #1eacc7
+$second-color: #ff5656
+
 @mixin black_quarter
     width: 112px
     height: 24px
@@ -25,6 +28,13 @@
     text-transform: uppercase
     text-align: center
     margin-top: 33px
+
+@mixin hover_btn
+  &:hover
+    background-image: none
+    background-color: $main-color
+
+  
 
 
 header
@@ -98,6 +108,10 @@ nav
     font-size: 14px
     font-weight: 400
     text-transform: uppercase
+    @include hover_btn
+    
+
+
 
 .promo
   min-height: 800px
@@ -147,6 +161,8 @@ nav
     text-transform: uppercase
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    @include hover_btn
+    
 
 .causes
   .label
@@ -243,6 +259,69 @@ nav
       margin: 0 auto
       border-radius: 100%
       cursor: pointer
-      img
-        width: 60%
+      &::before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $main-color
+        transition: 0.3s all
+      &::after
+        content: ''
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $main-color
+        position: absolute
+        transition: 0.3s all
+      &:hover
+        &::before,&::after
+          background-color: $second-color
+
+
       
+.tagline
+  .first_background
+    background-color: black
+    min-height: 500px
+    padding: 1px 0 0 0 
+    .label
+      @include black_quarter
+      color: black
+      background-color: white
+      margin-top: 57px
+    .title
+      @include headerH
+      color: #FFFFFF
+      margin-top: 27px
+    .subtitle
+      font-family: 'Roboto'
+      font-style: normal
+      font-weight: 400
+      font-size: 17px
+      text-align: center
+      color: #FFFFFF
+  .second_background
+    position: relative
+    min-height: 397px
+    background: url('..//img/bg/tagline_bg.png') center center/cover no-repeat
+    img
+      position: absolute
+      top: -266px
+      left: 50%
+      transform: translateX(-50%)
+  .mini_tagline
+    widows: 50px
+    padding: 220px 0 0 0
+    text-align: center
+    line-height: 24px
+
+
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+  .label
+    @include black_quarter
+  .title
+    @include headerH
