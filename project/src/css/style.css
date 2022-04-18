@@ -428,6 +428,16 @@ nav {
   margin: 33px 0;
 }
 
+.require_block_no_margin_bot {
+  margin-bottom: 0px;
+}
+
+.require_title {
+  color: #1ca8c3;
+  font-size: 22px;
+  font-weight: 400;
+}
+
 .require .label {
   width: 112px;
   height: 24px;
@@ -451,5 +461,46 @@ nav {
   text-transform: uppercase;
   text-align: center;
   margin-top: 33px;
+}
+
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.require_list li::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 20px;
+  background: url("../img/reasons/check_blue.svg") center center/cover no-repeat;
+  left: -40px;
+  top: 5px;
+}
+
+.require_descr {
+  margin-top: 25px;
+  font-style: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #1ca8c3;
+}
+
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+.require .warning .require_list li::before {
+  background: url("../img/reasons/check_red.svg") center center/cover no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
