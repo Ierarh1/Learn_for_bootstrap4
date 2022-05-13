@@ -23,15 +23,19 @@ nav {
   list-style: none;
 }
 
-.menu .menu_link {
+.menu_link {
   color: #ffffff;
   font-size: 15px;
   font-weight: 300;
 }
 
-.menu .menu_item {
+.menu_item {
   border-right: 2px dotted white;
   padding-right: 50px;
+}
+
+.menu_item:last-child {
+  border-right: none;
 }
 
 .subheader {
@@ -41,13 +45,13 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.subheader .subheader_logo {
+.subheader_logo {
   display: block;
   margin-top: 16px;
   max-width: 100%;
 }
 
-.subheader .subheader_official {
+.subheader_official {
   margin-top: 6px;
   opacity: 0.5;
   color: #ffffff;
@@ -55,7 +59,7 @@ nav {
   font-weight: 400;
 }
 
-.subheader .subheader_call {
+.subheader_call {
   color: #ffffff;
   font-size: 12px;
   font-weight: 300;
@@ -63,7 +67,7 @@ nav {
   text-align: right;
 }
 
-.subheader .subheader_phone {
+.subheader_phone {
   display: block;
   margin-top: 8px;
   color: #ffffff;
@@ -74,7 +78,7 @@ nav {
   line-height: 3px;
 }
 
-.subheader .subheader_btn {
+.subheader_btn {
   margin-top: 19px;
   width: 172px;
   height: 46px;
@@ -91,7 +95,7 @@ nav {
   text-transform: uppercase;
 }
 
-.subheader .subheader_btn:hover {
+.subheader_btn:hover {
   background-image: none;
   background-color: #1eacc7;
 }
@@ -102,7 +106,7 @@ nav {
   padding: 150px 0 135px 0;
 }
 
-.promo .promo_header {
+.promo_header {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -628,5 +632,55 @@ nav {
   position: absolute;
   right: 5px;
   top: 50px;
+}
+
+@media (max-width: 1400px) {
+  .menu .menu_item {
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu .menu_item {
+    padding-right: 13px;
+  }
+  .promo .promo_header {
+    font-size: 42px;
+  }
+  .causes .wrapper {
+    margin-top: 117px;
+  }
+  .causes .descr {
+    width: 226px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu .menu_item {
+    padding-right: 1px;
+  }
+  .menu .menu_link {
+    font-size: 13px;
+  }
+  .subheader_logo img {
+    width: 100%;
+  }
+  .subheader_official {
+    font-size: 12px;
+  }
+  .subheader_phone {
+    font-size: 13px;
+  }
+  .subheader_btn {
+    width: 100%;
+    margin-top: 32px;
+    height: 33px;
+  }
+  .promo .promo_header {
+    font-size: 32px;
+  }
+  .promo .promo_subheader {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
