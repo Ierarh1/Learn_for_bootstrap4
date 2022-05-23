@@ -701,7 +701,10 @@ nav {
   .menu {
     display: inline-block;
     position: fixed;
-    flex-firection: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -709,7 +712,7 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     top: 0;
-    left: 1%;
+    left: -100%;
     width: 50%;
     height: 100vh;
     padding: 20px 15px;
@@ -718,8 +721,8 @@ nav {
     -webkit-transition: 0.6s all;
     transition: 0.6s all;
   }
-  .menu .active {
-    left: 0;
+  .menu_active {
+    left: 1%;
   }
   .menu .menu_item {
     padding-right: 0;
